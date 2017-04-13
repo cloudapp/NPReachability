@@ -120,7 +120,9 @@ extern const struct NPReachabilityKeysStruct {
 
  @return A singleton instance of NPReachability
  */
-+ (NPReachability *)sharedInstance;
++ (instancetype)sharedInstance;
+
++ (instancetype)sharedInstanceForDomain:(NSString *)domain;
 
 /**
  A convenience class method for SCNetworkReachabilityFlags for whether or not they indicate a connection is available
