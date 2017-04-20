@@ -178,5 +178,6 @@ extern const struct NPReachabilityKeysStruct {
  */
 - (NSString *)reachabilityFlagsAsString;
 
+void NPNetworkReachabilityCallBack(SCNetworkReachabilityRef target, SCNetworkReachabilityFlags flags, void *info);
 
 @end

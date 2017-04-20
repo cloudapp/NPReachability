@@ -250,7 +250,6 @@ static NSMutableDictionary<NSString *, NPReachability *> *_instances;
 	}
 	SCNetworkReachabilityGetFlags(_reachabilityRef, &_currentReachabilityFlags);
 }
-
 void NPNetworkReachabilityCallBack(SCNetworkReachabilityRef target, SCNetworkReachabilityFlags flags, void *info) {
 #pragma unused(target)
 	NPReachability *reach = (__bridge NPReachability *)info;
